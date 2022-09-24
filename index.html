@@ -5,7 +5,7 @@
     <title>Lab 4</title>
   </head>
   <body>
-    <form method="post" action="http://bloomingdale.sat.iit.edu/kriedan/lab3formscript.php">
+    <form method="POST" autocomplete="on" action="http://bloomingdale.sat.iit.edu/kriedan/lab3formscript.php" enctype="multipart/form-data">
         <h1> Volunteer Form</h1>
         <input type="reset" value="Reset form">
         <fieldset>
@@ -68,6 +68,9 @@
             </div>
             <div>
                 <textarea cols="45" rows="20" name="comments_field" placeholder="A little about you..."></textarea>
+            </div>
+            <div>
+              <input type="file" name="file_field">
             </div>
         </fieldset>
         <div>
